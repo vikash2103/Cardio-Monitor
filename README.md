@@ -15,19 +15,14 @@ Over the last few decades, heart disease is the most common cause of global deat
 
 
 <h3>Technology Used. </h3> 
-<code><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" width="120px" /></code>
-<code><img src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png" width="120px" /></code>
-<code><img src="https://raw.githubusercontent.com/rasbt/mlxtend/master/docs/sources/img/logo.png" width="120px" /></code>
-<br>
-<br>
-
-<h3>Future Technology to be Used. </h3> 
-<code><img src="https://miro.medium.com/max/1838/1*qgkjkj6BLVS1uD4mw_sTEg.png" width="120px" /></code>
-<code><img src="https://bigdatapath.files.wordpress.com/2019/04/1-4.jpg?w=698" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/deepl/deepl-ar21.svg" width="120px" /></code>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+<img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/XGBoost-3776AB?style=for-the-badge" />
 <br>
 <br>
 
