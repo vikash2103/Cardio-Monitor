@@ -1,4 +1,5 @@
 from itertools import count
+import os
 from dotenv import load_dotenv
 load_dotenv()
 from flask import Flask, render_template ,url_for ,request,Response
@@ -18,7 +19,23 @@ import matplotlib.pyplot as plt
 import modelbuild
 
 
+class PrefixMiddleware:
+    """Lets the app be reverse-proxied under a path prefix (e.g. /cardio-monitor)
+    without breaking url_for()-generated links. No-op when URL_PREFIX is unset,
+    so local development at the site root is unaffected."""
+    def __init__(self, wsgi_app, prefix=""):
+        self.wsgi_app = wsgi_app
+        self.prefix = prefix
+
+    def __call__(self, environ, start_response):
+        if self.prefix and environ["PATH_INFO"].startswith(self.prefix):
+            environ["PATH_INFO"] = environ["PATH_INFO"][len(self.prefix):] or "/"
+            environ["SCRIPT_NAME"] = self.prefix
+        return self.wsgi_app(environ, start_response)
+
+
 app = Flask ( __name__ )
+app.wsgi_app = PrefixMiddleware(app.wsgi_app, prefix=os.environ.get("URL_PREFIX", ""))
 
 
 
